@@ -1,0 +1,35 @@
+<%- include('./partials/header')%>
+
+
+
+    <body>
+        <div class="container">
+            <h1>Cadastro</h1>
+
+            <form action="/salvarUsuario" method="POST" class="form">
+                <label for="email">E-mail</label>
+                <input class="input" type="email" name="email" id="email">
+
+                <label for="text">Nome</label>
+                <input class="input" type="text" name="nome" id="nome">
+
+                <label for="sobrenome">Sobrenome</label>
+                <input class="input" type="text" name="sobrenome" id="sobrenome">
+
+                <label for="password">Senha</label>
+                <input class="input" type="password" name="password" id="password">
+                <label for="password2" class="password2">Repita a senha</label>
+                <input class="input" type="password" name="password2" id="password2">
+
+
+                <label for="nascimento">Data de Nascimento</label>
+                <input class="input" type="date" name="nascimento" id="nascimento">
+
+
+                <button class="btnCad">Cadastrar-se</button>
+                <button class="btnCanc">Cancelar</button>
+            </form>
+        </div>
+    </body>
+
+    <%- include('./partials/footer')%>
