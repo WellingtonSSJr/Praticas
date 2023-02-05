@@ -101,7 +101,7 @@ label{
 	
 }
 #nascimento{
-	max-width: 110px;
+	max-width: 125px;
 	padding: 10px 10px;
 }
 .password2{
@@ -141,11 +141,14 @@ label{
 .btnCanc:hover{
   background: rgb(218, 115, 115);
   color: white;
-  /* width: 0px; */
   width: 100%;
   transition: .7s ;
     
 }
-.btnCanc:hover{
-   
+
+span{
+	color: rgb(207, 52, 52);
+}
+span.error{
+	padding: 10px;
 }

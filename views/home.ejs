@@ -7,17 +7,27 @@
             <h1>Cadastro</h1>
 
             <form action="/salvarUsuario" method="POST" class="form">
-                <label for="email">E-mail</label>
+                <label for="email">E-mail<span>*</span> </label>
                 <input class="input" type="email" name="email" id="email">
+                <span class="error">
+                    <%= emailErr%>
+                </span>
 
-                <label for="text">Nome</label>
+                <label for="text">Nome <span>*</span></label>
                 <input class="input" type="text" name="nome" id="nome">
+                <span class="error">
+                    <%= nomeErr%>
+                </span>
 
                 <label for="sobrenome">Sobrenome</label>
                 <input class="input" type="text" name="sobrenome" id="sobrenome">
 
-                <label for="password">Senha</label>
-                <input class="input" type="password" name="password" id="password">
+                <label for="password">Senha<span>*</span></label>
+                <input class="input" type="text" name="password" id="password">
+                <span class="error">
+                    <%= passwordErr%>
+                </span>
+
                 <label for="password2" class="password2">Repita a senha</label>
                 <input class="input" type="password" name="password2" id="password2">
 
