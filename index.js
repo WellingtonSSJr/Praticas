@@ -94,15 +94,14 @@ app.post('/salvarUsuario', (req, res)=>{
 
         // res.send('erro feio')
     }else{
-        res.send('passou')
         Usuario.create({
             email: email,
             nome: nome,
             sobrenome: sobrenome,
             password: password,
-            nascimento: nasc
+            nascimento: nascimento
         }).then(()=>{
-            res.redirect('teste')
+            res.redirect('/cadastro')
         })
     }
 
